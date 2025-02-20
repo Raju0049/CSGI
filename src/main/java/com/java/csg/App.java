@@ -75,7 +75,7 @@ public class App
      * @return {@code true} if the word length is greater than 5, otherwise {@code false}.
      */
     public static boolean isWordHavingLengthMoreThanLength(String word) {
-        return word.length() > Constants.LENGTH;
+        return word !=null && word.length() > Constants.LENGTH;
     }
 
     /**
@@ -85,7 +85,7 @@ public class App
      * @return {@code true} if the word starts with 'M' or 'm', otherwise {@code false}.
      */
     public static boolean isWordStartWithRequiredLetter(String word) {
-        return word.startsWith(Constants.SMALL_LETTER) || word.startsWith(Constants.CAPITAL_LETTER);
+        return word !=null && (word.startsWith(Constants.SMALL_LETTER) || word.startsWith(Constants.CAPITAL_LETTER));
     }
 
     /**
