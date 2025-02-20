@@ -38,5 +38,6 @@ public class AppTest
 		assertTrue(App.isWordStartWithRequiredLetter("Music"));
 		assertFalse(App.isWordStartWithRequiredLetter("Germany"));
 		assertTrue(App.isWordStartWithRequiredLetter("mangos"));
+		assertFalse(App.isWordStartWithRequiredLetter(null));
 	}
 }
